@@ -9,9 +9,10 @@ part = 1
 while True:
 	print('\n{} -------------------------------- PART {}\n'.format(game.upper(), part))
 	part += 1
-	dialogue_path = os.path.join(level_path, 'main.txt')
-	with open(dialogue_path, 'r') as f:
-		print(f.read())
+	dialog_path = os.path.join(level_path, 'main.txt')
+	if os.path.isfile(dialog_path):
+		with open(dialog_path, 'r') as f:
+			print(f.read())
 	options = [i for i in os.listdir(level_path) if os.path.isdir(os.path.join(level_path, i))]
 	if not options:
 		break
