@@ -14,7 +14,7 @@ A fabulae game has a predefined structure.
 
 ```
  game/
- ├── main.txt
+ ├── dialog.txt
  ├── command1/
  ├── command2/
  ├── command3/
@@ -22,18 +22,18 @@ A fabulae game has a predefined structure.
  ...
 ```
 
-The name of the game is the same as the name of the game directory, inside there should be one `main.txt` file containing the first dialogue.
+The name of the game is the same as the name of the game directory, inside there should be one `dialog.txt` file containing the first dialog.
 
-Each of the subfolders will be interpreted as commands for the current dialogue.
+Each of the subfolders will become commands for the current dialog.
 
 ```
  game/
  └── command1/
-     ├── main.txt
+     ├── dialog.txt
      ├── command1/
      └── command2/
      ...
  ...
 ```
 
-Every command follows the same file structure and has its own dialogue and commands. If the player gets to a folder without commands the game ends.
+Every command follows the same file structure and has its own dialog and commands. If the player gets to a folder without commands the game ends.
