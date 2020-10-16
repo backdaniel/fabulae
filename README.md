@@ -32,6 +32,7 @@ Each of the subfolders will be interpreted as commands for the current dialogue.
      ├── main.txt
      ├── command1/
      └── command2/
+     ...
  ...
 ```
 
