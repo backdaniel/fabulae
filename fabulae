@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import sys, os
+
+level_path = sys.argv[1]
+game = os.path.basename(os.path.normpath(level_path))
+part = 1
+
+while True:
+	print('\n{} -------------------------------- PART {}\n'.format(game.upper(), part))
+	part += 1
+	dialogue_path = os.path.join(level_path, 'main.txt')
+	with open(dialogue_path, 'r') as f:
+		print(f.read())
+	options = [i for i in os.listdir(level_path) if os.path.isdir(os.path.join(level_path, i))]
+	if not options:
+		break
+	choice = ''
+	while choice not in options:
+		print(options)
+		choice = input()
+	level_path = os.path.join(level_path, choice)
