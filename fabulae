@@ -16,8 +16,11 @@ while True:
 	options = [i for i in os.listdir(level_path) if os.path.isdir(os.path.join(level_path, i))]
 	if not options:
 		break
+	options.append('exit')
 	choice = ''
 	while choice not in options:
 		print(options)
 		choice = input()
+		if choice == 'exit':
+			sys.exit()
 	level_path = os.path.join(level_path, choice)
