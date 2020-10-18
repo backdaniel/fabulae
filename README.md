@@ -1,6 +1,6 @@
 # fabulae
 
-Simple text-based game engine, games are made by creating folders and text files, without having to program.
+Text-based game engine, games are made by creating folders and text files, without having to program.
 
 ## Usage
 
