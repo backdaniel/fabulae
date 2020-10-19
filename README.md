@@ -6,7 +6,7 @@ Text-based game engine, games are made by creating folders and text files, witho
 
 `./fabulae directory` where `directory` is the game directory.
 
-Try the included tutorial `./fabulae games/tutorial`.
+Try the included tutorial `./fabulae tutorial`.
 
 ## Making a game
 
