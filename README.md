@@ -2,6 +2,8 @@
 
 Text-based game engine, games are made by creating folders and text files, without having to program.
 
+![screenshot](http://backdaniel.com/img/screenshot/fabulae.png)
+
 ## Usage
 
 `./fabulae directory` where `directory` is the game directory.
