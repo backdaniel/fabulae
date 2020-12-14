@@ -9,7 +9,7 @@ part = 1
 while True:
 	print('\n{} -------------------------------- PART {}\n'.format(game.upper(), part))
 	part += 1
-	dialog_path = os.path.join(level_path, 'dialog.txt')
+	dialog_path = os.path.join(level_path, 'readme')
 	if os.path.isfile(dialog_path):
 		with open(dialog_path, 'r') as f:
 			print(f.read())
